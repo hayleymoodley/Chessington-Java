@@ -23,6 +23,7 @@ public class Pawn extends AbstractPiece {
     @Override
     public List<Move> getAllowedMoves(Coordinates from, Board board) {
         List<Move> allowedMoves = new ArrayList<>();
+
         if (PlayerColour.WHITE == this.getColour()) {
             Coordinates to = new Coordinates(from.getRow()-2, from.getCol());
             if (to == new Coordinates(4, 4)) {
@@ -48,6 +49,7 @@ public class Pawn extends AbstractPiece {
         return allowedMoves;
 
     }
+
 
 }
 
